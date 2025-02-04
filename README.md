@@ -1,16 +1,15 @@
 # Movie Web App with Angular
 This repository contains a movie web application developed using Angular. The application fetches data from the **[TMDb](https://www.themoviedb.org/)** database to offer features such as movie listing, searching, and viewing details. It can also be used as an example Angular project for developers.
 
-## Live Demo  
-The application is live and accessible at:  
-🔗 **[Live Demo - Movie Web App](https://movie-web-app-angular.netlify.app/home)** 
-
 ## Features
 - **Movie Listing:** Popular movies and TV shows can be listed.
 - **Search:** You can search by movie or TV show titles.
 - **Movie Details:** Details of the selected movie or TV show can be viewed.
 - **Visual / Poster:** Movie posters and images can be displayed from the TMDb database.
 - **Responsive Design:** The layout is responsive and works on mobile, tablet, and desktop devices.
+
+## Live Demo  
+The application is live and accessible at: [Movie Web App - Live Demo](https://movie-web-app-angular.netlify.app/home)
 
 ## Requirements
 - [Visual Studio Code](https://code.visualstudio.com/)
