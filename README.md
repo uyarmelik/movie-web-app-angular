@@ -9,7 +9,7 @@ This repository contains a movie web application developed using Angular. The ap
 - **Responsive Design:** The layout is responsive and works on mobile, tablet, and desktop devices.
 
 ## Live Demo  
-The application is live and accessible at: [Movie Web App - Live Demo](https://movie-web-app-angular.netlify.app/home)
+The application is live and accessible at: **[Movie Web App - Live Demo](https://movie-web-app-angular.netlify.app/home)**
 
 ## Requirements
 - [Visual Studio Code](https://code.visualstudio.com/)
