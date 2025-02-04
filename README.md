@@ -1,6 +1,10 @@
 # Movie Web App with Angular
 This repository contains a movie web application developed using Angular. The application fetches data from the **[TMDb](https://www.themoviedb.org/)** database to offer features such as movie listing, searching, and viewing details. It can also be used as an example Angular project for developers.
 
+## Live Demo  
+The application is live and accessible at:  
+🔗 **[Live Demo - Movie Web App](https://movie-web-app-angular.netlify.app/home)** 
+
 ## Features
 - **Movie Listing:** Popular movies and TV shows can be listed.
 - **Search:** You can search by movie or TV show titles.
@@ -26,7 +30,7 @@ npm install
 yarn install
 ```
 
-- Configure the environment variables: To access the movie API used in the project, edit the TMDB API keys in either the `src/environments/environment.ts` or `src/environments/environment.prod.ts` file.
+- Configure the environment variables: The TMDB API key can be set in the `src/environments/environment.ts` or `src/environments/environment.prod.ts` file for local development. For production deployment on Netlify, store the API key securely as an environment variable in the Netlify dashboard under `Site Settings > Environment Variables`.
 
 - Start the development server:
 
