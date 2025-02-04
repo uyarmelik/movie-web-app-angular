@@ -26,7 +26,7 @@ npm install
 yarn install
 ```
 
-- Configure the environment variables: To access the movie API used in the project, edit the TMDB API keys in either the `src/environments/environment.ts` or `src/environments/environment.development.ts` file.
+- Configure the environment variables: To access the movie API used in the project, edit the TMDB API keys in either the `src/environments/environment.ts` or `src/environments/environment.prod.ts` file.
 
 - Start the development server:
 
