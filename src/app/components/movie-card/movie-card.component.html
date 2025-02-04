@@ -1,0 +1,6 @@
+  <div *ngIf="config" (click)="handleClick()" class="movie-card-container">
+    <div [ngStyle]="{ 'background-image': 'url(' + config.img + ')' }" class="image-container">
+      <app-rate-chip [rate]="config.rate" [placeDecimals]="1"></app-rate-chip>
+    </div>
+    <p class="name">{{ config.movieName }}</p>
+  </div>

@@ -1,0 +1,6 @@
+<div *ngIf="config" class="segmented-control-container">
+  <div *ngFor="let segment of config; trackBy: trackBySegment" (click)="selectItem(segment)"
+    [class.active-item]="segment.active" class="segment">
+    {{segment.name}}
+  </div>
+</div>

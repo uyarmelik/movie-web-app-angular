@@ -1,0 +1,49 @@
+name: Angular Build and Deploy
+
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20'
+
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Install Angular CLI
+        run: npm install -g @angular/cli
+
+      - name: Replace API Key in Environment
+        env:
+          TMDB_TOKEN: ${{ secrets.TMDB_TOKEN }}
+        run: |
+          sed -i "s|token: ''|token: '$TMDB_TOKEN'|" src/environments/environment.prod.ts
+
+
+      - name: Build Angular App
+        run: ng build --configuration production --base-href "/movie-web-app-angular/"
+
+      - name: Inject API Token at Runtime
+        env:
+            TMDB_TOKEN: ${{ secrets.TMDB_TOKEN }}
+        run: |
+            echo "<script>window.TMDB_TOKEN = '"$TMDB_TOKEN"';</script>" >> dist/browser/index.html
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GH_TOKEN }}
+          publish_dir: dist/browser

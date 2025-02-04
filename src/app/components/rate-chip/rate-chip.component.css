@@ -1,0 +1,19 @@
+.rate-chip-container {
+  display: flex;
+  -moz-column-gap: 5px;
+       column-gap: 5px;
+  padding: 5px 8px;
+  border-radius: 7px;
+  background: rgba(0, 0, 0, 0.8);
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.rate-chip-container i {
+  color: #f9a533;
+  font-weight: bold;
+}
+.rate-chip-container span {
+  font-size: 17.35px;
+  font-weight: bold;
+  color: #f9a533;
+}/*# sourceMappingURL=rate-chip.component.css.map */

@@ -1,0 +1,57 @@
+.nav-bar-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 18px 0px;
+  background: rgba(15, 22, 39, 0.93);
+}
+.nav-bar-container .nav-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+}
+.nav-bar-container .logo-section {
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.nav-bar-container .logo-section .logo {
+  background-image: url("../../../assets/movie-web-app-logo.svg");
+  height: 40px;
+  width: 40px;
+  background-repeat: no-repeat;
+}
+.nav-bar-container .logo-section .name {
+  letter-spacing: 1px;
+  font-size: 17px;
+  font-weight: bold;
+  color: #ebeef5;
+  margin-left: 12px;
+}
+.nav-bar-container ul {
+  display: flex;
+  -moz-column-gap: 29px;
+       column-gap: 29px;
+  align-items: center;
+  margin: 0px;
+}
+.nav-bar-container ul li {
+  list-style: none;
+  color: #767e94;
+  font-size: 17px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 9px;
+       column-gap: 9px;
+  cursor: pointer;
+}
+.nav-bar-container ul li i {
+  color: #767e94;
+}
+.nav-bar-container ul .active-item {
+  color: rgba(255, 255, 255, 0.65);
+}/*# sourceMappingURL=nav-bar.component.css.map */

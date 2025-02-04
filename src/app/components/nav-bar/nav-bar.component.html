@@ -1,0 +1,17 @@
+<div class="nav-bar-container">
+  <div class="nav-content">
+
+    <div class="logo-section" (click)="homePage()">
+      <div class="logo"></div>
+      <div class="name">Movie Web App</div>
+    </div>
+
+    <ul *ngIf="navItems">
+      <li *ngFor="let nav of navItems; trackBy: trackByName" [class.active-item]="nav.active"
+        (click)="selectedItem(nav)">
+        {{nav.name}}
+      </li>
+    </ul>
+
+  </div>
+</div>

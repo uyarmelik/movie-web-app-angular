@@ -1,0 +1,27 @@
+.input-container {
+  display: flex;
+  width: 100%;
+  padding: 20px 19px;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  border-radius: 13px;
+  border: 1px solid #20283e;
+  background: #0f1627;
+}
+.input-container i {
+  font-size: 19px;
+  color: #767e94;
+}
+.input-container input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 16px;
+}
+.input-container input::-moz-placeholder {
+  color: #767e94;
+}
+.input-container input::placeholder {
+  color: #767e94;
+}/*# sourceMappingURL=input.component.css.map */

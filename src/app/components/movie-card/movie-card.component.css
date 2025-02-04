@@ -1,0 +1,27 @@
+.movie-card-container {
+  display: flex;
+  flex-direction: column;
+  padding: 8px;
+  background: #0f1627;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.movie-card-container .image-container {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 5/7.5;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 9px 8px;
+}
+.movie-card-container .name {
+  margin-bottom: 25px;
+  font-size: 17px;
+  font-weight: 700;
+  text-align: center;
+  color: #ebeef5;
+  text-wrap: wrap;
+}/*# sourceMappingURL=movie-card.component.css.map */

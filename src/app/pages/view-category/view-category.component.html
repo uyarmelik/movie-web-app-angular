@@ -1,0 +1,31 @@
+<div class="view-category-container">
+  <div class="view-category-content">
+
+    <div class="title-container">
+      <p *ngIf="title" class="title">{{title}} <span>({{movieCards.length}})</span></p>
+    </div>
+
+    <div class="search-container">
+      <app-input (searchChange)="onSearchChange($event)"></app-input>
+    </div>
+
+    <div class="movie-cards-section">
+
+      <ng-container *ngIf="movieCards.length; else noData">
+        <div *ngFor="let item of movieCards" class="movie-card">
+          <app-movie-card [config]="item"></app-movie-card>
+        </div>
+      </ng-container>
+
+      <ng-template #noData>
+        <p class="no-data-message">No data available for {{ title }}.</p>
+      </ng-template>
+
+    </div>
+
+    <div *ngIf="currentPage < totalPages" (click)="loadMore()" class="more-result">
+      <span>More Result</span>
+    </div>
+
+  </div>
+</div>

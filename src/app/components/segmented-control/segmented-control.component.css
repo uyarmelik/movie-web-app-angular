@@ -1,0 +1,20 @@
+.segmented-control-container {
+  display: flex;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 8px;
+  background: #0f1627;
+  border-radius: 8px;
+}
+.segmented-control-container .segment {
+  padding: 8px 32px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #767e94;
+  cursor: pointer;
+}
+.segmented-control-container .active-item {
+  background: #f9a533;
+  color: rgba(0, 0, 0, 0.65);
+  border-radius: 8px;
+}/*# sourceMappingURL=segmented-control.component.css.map */
